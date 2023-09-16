@@ -20,16 +20,16 @@ async function main() {
 
     console.log(response.data);
 
-    const response1 = await axios({
-        method: 'get', 
-        url: 'https://account-public-service-prod.ol.epicgames.com/account/api/oauth/exchange',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: `Bearer ${response.data.access_token}`
-        }
-    });
+    // const response1 = await axios({
+    //     method: 'get', 
+    //     url: 'https://account-public-service-prod.ol.epicgames.com/account/api/oauth/exchange',
+    //     headers: {
+    //         'Content-Type': 'application/x-www-form-urlencoded',
+    //         Authorization: `Bearer ${response.data.access_token}`
+    //     }
+   //});
 
-    console.log(response1.data);
+    //console.log(response1.data);
 };
 
 main().catch(error => console.error(error));
